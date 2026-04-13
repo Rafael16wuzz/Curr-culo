@@ -6,7 +6,17 @@
     <title>Currículo</title>
     <link rel="stylesheet" href="curriculoindex.css">
 </head>
-<body>
+<body style="display:none;">
+
+    <script>
+let senha = prompt("Digite a senha para acessar o currículo:");
+
+if (senha !== "julinha@123") {
+    document.body.innerHTML = "<h1>Acesso negado</h1>";
+} else {
+    document.body.style.display = "block";
+}
+</script>
     <div class="pagina">
         
         <div class="coluna">
